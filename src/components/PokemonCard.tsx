@@ -1,6 +1,12 @@
 import React from 'react';
 
-const PokemonCard = ({ pokemon }) => {
+type Pokemon = {
+    name: string;
+    imgSrc?: string;
+}
+
+const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
+
     return (
         <figure>
             {pokemon.imgSrc? <img src={pokemon.imgSrc} alt="Image d'un pokémon Bulbasaur" /> : <p>???</p>}
