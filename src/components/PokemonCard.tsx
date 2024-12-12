@@ -4,8 +4,8 @@ type Pokemon = {
     name: string;
     imgSrc?: string;
 }
-
 const PokemonCard = ({ pokemon }: { pokemon: Pokemon }) => {
+
 
     return (
         <figure>
