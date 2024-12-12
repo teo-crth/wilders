@@ -9,9 +9,6 @@ function App() {
 
   return (
     <>
-      < UserContext.Provider value={{ isOnline, setIsOnline }}>
-        <UserProfile />;
-      </UserContext.Provider>
     </>
   )
 }
